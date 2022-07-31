@@ -1,0 +1,46 @@
+PODS:
+  - ReachabilitySwift (5.0.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+  - SVProgressHUD (2.2.5)
+  - SwiftMessages (9.0.6):
+    - SwiftMessages/App (= 9.0.6)
+  - SwiftMessages/App (9.0.6)
+
+DEPENDENCIES:
+  - ReachabilitySwift
+  - RxCocoa
+  - RxSwift
+  - SDWebImage (~> 5.0)
+  - SVProgressHUD
+  - SwiftMessages
+
+SPEC REPOS:
+  trunk:
+    - ReachabilitySwift
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SDWebImage
+    - SVProgressHUD
+    - SwiftMessages
+
+SPEC CHECKSUMS:
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftMessages: f0c7ef4705a570ad6c5e208b611f4333e660ed92
+
+PODFILE CHECKSUM: f57cb44c4bf4b52b62c571c89839ab805a9f633a
+
+COCOAPODS: 1.11.3
