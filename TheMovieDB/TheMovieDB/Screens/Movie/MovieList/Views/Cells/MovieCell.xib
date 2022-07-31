@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCell" customModule="OMDB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="310"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="218" height="310"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TWN-pS-Whe">
+                        <rect key="frame" x="0.0" y="0.0" width="218" height="310"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OAk-ad-uX0">
+                                <rect key="frame" x="0.0" y="0.0" width="218" height="310"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bd-p1-lXY">
+                                <rect key="frame" x="0.0" y="254.5" width="218" height="55.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_gradient" translatesAutoresizingMaskIntoConstraints="NO" id="okQ-aW-v4e">
+                                        <rect key="frame" x="0.0" y="0.0" width="218" height="55.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Foq-dg-5M4">
+                                        <rect key="frame" x="16" y="24" width="186" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Foq-dg-5M4" firstAttribute="top" secondItem="2bd-p1-lXY" secondAttribute="top" constant="24" id="7Cr-YG-kHL"/>
+                                    <constraint firstAttribute="bottom" secondItem="Foq-dg-5M4" secondAttribute="bottom" constant="12" id="CQH-oC-r1k"/>
+                                    <constraint firstAttribute="bottom" secondItem="okQ-aW-v4e" secondAttribute="bottom" id="fjq-Tw-mhf"/>
+                                    <constraint firstItem="okQ-aW-v4e" firstAttribute="leading" secondItem="2bd-p1-lXY" secondAttribute="leading" id="hY7-Sc-7XL"/>
+                                    <constraint firstItem="okQ-aW-v4e" firstAttribute="top" secondItem="2bd-p1-lXY" secondAttribute="top" id="jif-RL-vCr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Foq-dg-5M4" secondAttribute="trailing" constant="16" id="pPX-WH-h5K"/>
+                                    <constraint firstItem="Foq-dg-5M4" firstAttribute="leading" secondItem="2bd-p1-lXY" secondAttribute="leading" constant="16" id="qa0-OR-aUh"/>
+                                    <constraint firstAttribute="trailing" secondItem="okQ-aW-v4e" secondAttribute="trailing" id="rZb-0P-gzj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="OAk-ad-uX0" firstAttribute="leading" secondItem="TWN-pS-Whe" secondAttribute="leading" id="3Zb-9U-hqD"/>
+                            <constraint firstAttribute="bottom" secondItem="2bd-p1-lXY" secondAttribute="bottom" id="9LY-aK-UaG"/>
+                            <constraint firstItem="OAk-ad-uX0" firstAttribute="top" secondItem="TWN-pS-Whe" secondAttribute="top" id="DS5-aV-bQt"/>
+                            <constraint firstItem="2bd-p1-lXY" firstAttribute="leading" secondItem="TWN-pS-Whe" secondAttribute="leading" id="Hxx-aT-FM4"/>
+                            <constraint firstAttribute="bottom" secondItem="OAk-ad-uX0" secondAttribute="bottom" id="P46-yw-OVO"/>
+                            <constraint firstAttribute="trailing" secondItem="2bd-p1-lXY" secondAttribute="trailing" id="UR0-rf-bDj"/>
+                            <constraint firstAttribute="trailing" secondItem="OAk-ad-uX0" secondAttribute="trailing" id="nnB-2N-4S2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="TWN-pS-Whe" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2uZ-hb-3RZ"/>
+                <constraint firstAttribute="bottom" secondItem="TWN-pS-Whe" secondAttribute="bottom" id="6F0-RN-OsY"/>
+                <constraint firstAttribute="trailing" secondItem="TWN-pS-Whe" secondAttribute="trailing" id="As5-xR-6Z9"/>
+                <constraint firstItem="TWN-pS-Whe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="fbD-DU-YlZ"/>
+            </constraints>
+            <size key="customSize" width="218" height="310"/>
+            <connections>
+                <outlet property="movieImageView" destination="OAk-ad-uX0" id="q3N-S1-TGW"/>
+                <outlet property="titleLabel" destination="Foq-dg-5M4" id="tc6-DD-bmN"/>
+                <outlet property="wrapTitleView" destination="2bd-p1-lXY" id="7jm-Ts-8QV"/>
+                <outlet property="wrapView" destination="TWN-pS-Whe" id="r7F-nD-iUh"/>
+            </connections>
+            <point key="canvasLocation" x="259.4202898550725" y="117.1875"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="img_gradient" width="50" height="47"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
