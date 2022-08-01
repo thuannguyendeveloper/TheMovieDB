@@ -65,8 +65,7 @@ class MovieListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.config()
-        self.totalPages = 1000
-        self.currentPage = 998
+        self.currentPage = 1
     }
     
     private func config() {
